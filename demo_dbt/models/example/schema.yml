@@ -1,0 +1,21 @@
+
+version: 2
+
+models:
+    - name: my_fst_dbt_model
+      description: "A starter dbt model"
+      columns:
+          - name: PRODUCT_ID
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: my_sec_dbt_model
+      description: "A starter dbt model"
+      columns:
+          - name: PRODUCT_ID
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
