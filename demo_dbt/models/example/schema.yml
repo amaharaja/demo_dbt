@@ -27,3 +27,11 @@ models:
             tests:
                 - unique
                 - not_null
+    - name: rename_account
+      description: "A starter dbt model"
+      columns:
+          - name: PRODUCT_ID
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null                
